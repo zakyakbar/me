@@ -97,13 +97,11 @@ img {
 
 /*===== CLASS CSS ===== */
 .section-title {
-    position: relative;
     font-size: 35px;
     color: var(--first-color);
     margin-top: var(--mb-2);
-    margin-bottom: var(--mb-4);
-    text-align: right;
-    padding-right: 5%;
+    margin-bottom: 15%;
+    text-align: center;
     text-shadow: 0 2px 3px #888888;
 }
 
@@ -298,6 +296,7 @@ img {
     padding: .75rem 2.5rem;
     font-weight: var(--font-semi);
     border-radius: .5rem;
+    align-items: center;
 }
 
 .button:hover {
@@ -372,13 +371,20 @@ img {
 .contact__img {
     padding-top: 15px;
     border-top: solid 3px var(--sixth-color);
-    display: flex;
     padding-bottom: 35px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin: 0 19%;
 }
 
 .contact__icon {
-    width: 90px;
-    padding: 0 10px;
+    width: 50px;
+    padding: 10px 0;
+}
+
+.contact__contbutton {
+    margin: 0 32%;
 }
 
 .contact__button {
@@ -387,6 +393,7 @@ img {
     outline: none;
     font-size: var(--normal-font-size);
     cursor: pointer;
+    justify-items: center;
 }
 
 /* ===== FOOTER =====*/
@@ -407,7 +414,6 @@ img {
 
 .footer__maps {
     width: 50px;
-
 }
 
 .cp {
@@ -429,7 +435,42 @@ img {
 
     .section-title {
         margin-bottom: var(--mb-6);
+        font-size: 35px;
+        color: var(--first-color);
+        margin-top: var(--mb-2);
+        margin-bottom: var(--mb-4);
+        text-align: right;
+        padding-right: 5%;
+        text-shadow: 0 2px 3px #888888;
 
+    }
+
+    .contact__img {
+        padding-top: 15px;
+        border-top: solid 3px var(--sixth-color);
+        display: flex;
+        padding-bottom: 15px;
+        border-bottom: solid 3px var(--sixth-color);
+    }
+
+    .contact__icon {
+        width: 90px;
+        padding: 0 10px;
+    }
+
+    .contact__contbutton {
+        padding-top: 15px;
+        align-items: center;
+        float: center;
+
+    }
+
+    .contact__button {
+        display: block;
+        border: none;
+        outline: none;
+        font-size: var(--normal-font-size);
+        cursor: pointer;
     }
 
     .nav {
@@ -493,24 +534,28 @@ img {
         color: #fff;
         font-size: 20px;
         padding: 2rem 0;
-        justify-content: space-between;
+        display: flex;
+        grid-template-columns: auto auto;
+        height: 100px;
 
     }
 
     .footer__text {
         display: flex;
-        padding: 5px 10px;
+        padding: 15px 10px;
         justify-content: space-between;
     }
 
     .footer__maps {
         width: 50px;
-        float: left;
         padding-left: 15px;
+        padding-top: 10px;
     }
 
     .cp {
-        letter-spacing: 20px;
+        margin-left: 64%;
+        padding-top: 35px;
+        font-size: 20px;
     }
 
     .about__container {
