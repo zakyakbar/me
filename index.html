@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="css/style.css">
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
         <title>Zaky Akbar Alfarid</title>
     </head>
     <body>
@@ -15,9 +15,10 @@
 
             <nav class="nav size">
 
+                <a href="#home" class="nav_link active"></a>
                 <div class="nav_menu" id="nav-menu">
                     <ul class="nav_list">
-                        <a href="#home" class="nav_link active"></a>
+                        
                         <li class="nav_item"><a href="#about" class="nav_link">About Me</a></li>
                         <li class="nav_item"><a href="#skill" class="nav_link">Skills</a></li>
                         <li class="nav_item"><a href="#project" class="nav_link">Project</a></li>
@@ -26,7 +27,7 @@
                 </div>
 
                 <div class="nav_toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
+                    <i class='bx bx-chevron-left-circle'></i>
                 </div>
             </nav>
 
@@ -133,27 +134,19 @@
         <h2 class="title_dua">Contact me</h2>
 
         <div class="contact_menu size">
-
-            <div class="contact_email">
-                <h3 class="contact_text">Send Me an Email</h3>
-                <form action="" class="contact_form">
-                    <input type="text" placeholder="Nama" class="contact_input">
-                    <input type="mail" placeholder="Email" class="contact_input">
-                    <textarea name="" id="" cols="0" rows="10" class="contact_input"></textarea>
-                    <input type="button" value="Kirim" class="contact_button button">
-                </form>
-            </div>
-            <div class="contact_media">
-                <h3 class="contact_text">You can Find Me at</h3>
-                <div class="contact_person">
-                    <a href="https://wa.me/0895338090502" target="_blank" class="contact_icon"><img src="assets/wa.png" alt=""></a>
-                    <a href="https://web.facebook.com/zakiakbaralfarid/" target="_blank" class="contact_icon"><img src="assets/facebook.png" alt=""></a>
-                    <a href="https://www.instagram.com/zakiakbarr/" target="_blank" class="contact_icon"><img src="assets/instagram.png" alt=""></a>
-                    <a href="https://t.me/zakyakbar" target="_blank" class="contact_icon"><img src="assets/telegram.png" alt=""></a>
-                    <a href="https://www.linkedin.com/in/zaky-akbar-alfaridz-5335a31a9/" target="_blank" class="contact_icon"><img src="assets/linkedin.png" alt=""></a>
-                    <a href="https://github.com/zakyakbar" target="_blank" class="contact_icon"><img src="assets/github.png" alt=""></a>
-                </div>
-            </div>
+            <a> You Can Find Me At</a>
+            <div class="contact_social">
+                <a href="https://wa.me/0895338090502" target="_blank" class="contact_icon"><img src="assets/wa.png" alt=""></a>
+                <a href="https://web.facebook.com/zakiakbaralfarid/" target="_blank" class="contact_icon"><img src="assets/facebook.png" alt=""></a>
+                <a href="https://www.instagram.com/zakiakbarr/" target="_blank" class="contact_icon"><img src="assets/instagram.png" alt=""></a>
+                <a href="https://t.me/zakyakbar" target="_blank" class="contact_icon"><img src="assets/telegram.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/zaky-akbar-alfaridz-5335a31a9/" target="_blank" class="contact_icon"><img src="assets/linkedin.png" alt=""></a>
+                <a href="https://github.com/zakyakbar" target="_blank" class="contact_icon"><img src="assets/github.png" alt=""></a>
+        </div>
+        <a> Or Send Me An Email</a>
+        <div class="contact_button">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=zaki25akbar@gmail.com" target="_blank"><input type="button" value="Hire Me" class="contact_button button"></a>
+        </div>
         </div>
     </section>
 
@@ -167,6 +160,7 @@
     </footer>
 
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
 
     <script src="main.js"></script>
 
