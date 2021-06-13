@@ -301,6 +301,7 @@ img {
     border-radius: 10px;
     box-shadow: 0px 4px 20px 2px black;
     margin: 20px 0px;
+    height: 100%;
 }
 
 .ext_one {
@@ -539,6 +540,7 @@ footer {
         margin: 20px auto;
         width: 70%;
         font-family: var(--font-regular);
+        grid-gap: 30px;
     }
 
     .project_data {
